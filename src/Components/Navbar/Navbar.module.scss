@@ -1,0 +1,10 @@
+@import "../../assets/styles/functions.scss";
+@import "../../assets/styles/colors.scss";
+
+.Navbar {
+  display: flex;
+  gap: 20px;
+
+  @include sm() {
+  }
+}

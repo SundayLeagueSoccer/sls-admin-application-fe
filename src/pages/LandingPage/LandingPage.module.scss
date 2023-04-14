@@ -1,0 +1,14 @@
+@import "../../assets/styles/functions.scss";
+@import "../../assets/styles/colors.scss";
+
+.LandingPage {
+  display: flex;
+  font-family: "Solway", serif;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  @include sm() {
+  }
+}

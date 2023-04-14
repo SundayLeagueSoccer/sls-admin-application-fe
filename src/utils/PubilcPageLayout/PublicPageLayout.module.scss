@@ -1,0 +1,10 @@
+@import "../../assets/styles/functions.scss";
+@import "../../assets/styles/colors.scss";
+
+.PublicPageLayout {
+  display: flex;
+  flex-direction: column;
+
+  @include sm() {
+  }
+}
