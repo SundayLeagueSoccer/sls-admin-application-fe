@@ -3,12 +3,47 @@
 
 .LandingPage {
   display: flex;
+  flex-direction: column;
   font-family: "Solway", serif;
   width: 100vw;
   height: 100vh;
   justify-content: center;
   align-items: center;
 
+  @include md() {
+  }
+
   @include sm() {
+  }
+
+  .LandingPageHeader {
+    margin-bottom: pixRem(100);
+    p {
+      color: $test;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: pixRem(16);
+      line-height: pixRem(24);
+    }
+  }
+
+  .LandingPageButtons {
+    display: flex;
+    align-items: center;
+    column-gap: pixRem(20);
+
+    button {
+      background-color: $buttonColor;
+      border-radius: pixRem(8);
+      padding: pixRem(8) pixRem(20);
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 700;
+      font-size: pixRem(20);
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
   }
 }
