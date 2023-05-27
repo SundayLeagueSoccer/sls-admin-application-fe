@@ -1,0 +1,32 @@
+@import "../../../assets/styles/functions.scss";
+@import "../../../assets/styles/colors.scss";
+
+
+.AdminPageHeader {
+    @include md() {
+      display: none;
+    }
+    @include sm() {
+      display: none;
+    }
+
+    h1 {
+      font-family: "Solway";
+      font-style: normal;
+      font-weight: 500;
+      font-size: pixRem(36);
+      line-height: pixRem(46);
+      letter-spacing: pixRem(-0.333333);
+      color: $adminPageBlue;
+    }
+
+    h4 {
+      font-family: "Sora";
+      font-style: normal;
+      font-weight: 400;
+      font-size: pixRem(18);
+      line-height: 170%;
+      letter-spacing: pixRem(-0.333333);
+      color: $fontGrey;
+    }
+  }

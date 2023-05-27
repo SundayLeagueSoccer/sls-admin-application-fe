@@ -21,25 +21,28 @@
 */
 
 //mobile devices
-// On screens that are 768px or less,
+// On screens between 720px and 294px
 @mixin sm() {
-  @media (max-width: 600px) and (min-width: 294px) {
+  @media (max-width: 720px) and (min-width: 294px) {
     @content;
   }
 }
 
 //most tablets and phablet devices
-//on screens between 1288px and 768px
+//on screens between 1280px and 601px
+//because of the macbook air, i adjusted this to 1279px-721px
 @mixin md() {
-  @media (max-width: 1280px) and (min-width: 601px) {
+  @media (max-width: 1279px) and (min-width: 721px) {
     @content;
   }
 }
 
 //extra large screens
-//on screens between 1288px and 768px
+//on screens above 1780px
 @mixin xl() {
-  @media (min-width: 1660px) {
+  @media (min-width: 1781px) {
     @content;
   }
 }
+
+//note that large screens are between 1281px and 1780px
