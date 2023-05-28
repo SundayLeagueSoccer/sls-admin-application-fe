@@ -1,0 +1,64 @@
+@import "../../../assets/styles/functions.scss";
+@import "../../../assets/styles/colors.scss";
+
+.MobileTabView {
+    display: none;
+
+    @include md() {
+      display: flex;
+      flex-direction: column;
+      row-gap: pixRem(30);
+      padding: 0 pixRem(18);
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    @include sm() {
+      display: flex;
+      flex-direction: column;
+      row-gap: pixRem(30);
+      padding: 0 pixRem(18);
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    img {
+      @include md() {
+        width: 50%;
+      }
+
+      @include sm() {
+        width: 50%;
+      }
+    }
+
+    p {
+      @include md() {
+        text-align: center;
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 400;
+        font-size: pixRem(18);
+        line-height: 170%;
+        cursor: none;
+        text-align: center;
+        letter-spacing: pixRem(-0.333333);
+        color: #73797f;
+      }
+
+      @include sm() {
+        text-align: center;
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 400;
+        font-size: pixRem(18);
+        line-height: 170%;
+        cursor: none;
+        text-align: center;
+        letter-spacing: pixRem(-0.333333);
+        color: #73797f;
+      }
+    }
+  }

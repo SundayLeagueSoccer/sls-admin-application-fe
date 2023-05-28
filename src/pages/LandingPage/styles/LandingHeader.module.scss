@@ -1,0 +1,23 @@
+@import "../../../assets/styles/functions.scss";
+@import "../../../assets/styles/colors.scss";
+
+.LandingPageHeader {
+    margin-bottom: pixRem(100);
+
+    @include md() {
+      display: none;
+    }
+  
+    @include sm() {
+      display: none;
+    }
+
+    p {
+      color: $test;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: pixRem(16);
+      line-height: pixRem(24);
+    }
+  }

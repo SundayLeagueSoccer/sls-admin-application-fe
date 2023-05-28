@@ -1,0 +1,26 @@
+@import "../../../assets/styles/functions.scss";
+@import "../../../assets/styles/colors.scss";
+
+.DashboardLeft {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    column-gap: pixRem(10);
+    width: 33%;
+
+    .PlayersName {
+      p {
+        background-color: $playersName;
+        border-radius: pixRem(24);
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 400;
+        font-size: pixRem(18);
+        line-height: 170%;
+        letter-spacing: pixRem(-0.333333);
+        padding: pixRem(3) pixRem(25);
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
