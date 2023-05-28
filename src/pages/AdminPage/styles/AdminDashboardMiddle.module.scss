@@ -1,0 +1,64 @@
+@import "../../../assets/styles/functions.scss";
+@import "../../../assets/styles/colors.scss";
+
+.DashboardMiddle {
+    padding-top: pixRem(50);
+    width: 33%;
+
+    .AddPlayerGoal {
+      padding: pixRem(10);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      row-gap: pixRem(15);
+
+      p {
+        border: pixRem(1) solid #c1c1c1;
+        border-radius: pixRem(8);
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 400;
+        font-size: pixRem(18);
+        line-height: 170%;
+        cursor: none;
+        text-align: center;
+        letter-spacing: pixRem(-0.333333);
+        color: #73797f;
+      }
+
+      input {
+        border: pixRem(1) solid #c1c1c1;
+        text-align: center;
+        outline: none;
+        height: pixRem(39);
+        width: 50%;
+        margin: 0 auto;
+        border-radius: pixRem(8);
+        font-family: "Sora";
+        font-style: normal;
+        font-weight: 400;
+        font-size: pixRem(18);
+        line-height: 170%;
+        letter-spacing: pixRem(-0.333333);
+        color: #73797f;
+      }
+
+      button {
+        height: pixRem(39);
+        width: 50%;
+        margin: 0 auto;
+        background: #0169c2;
+        border: 1px solid #c1c1c1;
+        border-radius: pixRem(8);
+        outline: none;
+        cursor: pointer;
+        font-family: "Solway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: pixRem(20);
+        line-height: 150%;
+        letter-spacing: pixRem(0.0025);
+        color: #ffffff;
+      }
+    }
+  }

@@ -1,0 +1,30 @@
+@import "../../assets/styles/functions.scss";
+@import "../../assets/styles/colors.scss";
+
+.AdminPage {
+  width: 100vw;
+  height: 100vh;
+  padding: pixRem(50) pixRem(90);
+
+  @include md() {
+    padding: 0 pixRem(72);
+  }
+  @include sm() {
+    padding: 0 pixRem(18);
+  }
+
+  .AdminPageDashboard {
+    margin-top: pixRem(50);
+    display: flex;
+    column-gap: pixRem(20);
+    width: 100%;
+
+    @include md() {
+      display: none;
+    }
+    @include sm() {
+      display: none;
+    }
+  }
+
+}
