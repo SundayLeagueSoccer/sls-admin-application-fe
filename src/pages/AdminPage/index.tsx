@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import Navbar from "../../Components/Navbar";
-
 // Framer motion
 import AnimatedFadeInPage from "../../utils/AnimatedFadeInPage";
 
@@ -15,25 +13,20 @@ import AdminDashboardMiddle from "./components/AdminDashboardMiddle";
 import AdminDashboardRight from "./components/AdminDashboardRight";
 import AdminView from "./components/AdminView";
 
-
 const AdminPage = () => {
+  useEffect(() => {}, []);
 
-  useEffect(() => {
-    
-  }, [])
-  
   return (
     <>
       <AnimatedFadeInPage>
         <main className={styles.AdminPage}>
-          {/* <Navbar/> */}
-          <AdminPageHeader/>
+          <AdminPageHeader />
           <div className={styles.AdminPageDashboard}>
-            <AdminDashboardLeft/>
-            <AdminDashboardMiddle/>
-            <AdminDashboardRight/>
+            <AdminDashboardLeft />
+            <AdminDashboardMiddle />
+            <AdminDashboardRight />
           </div>
-            <AdminView/>
+          <AdminView />
         </main>
       </AnimatedFadeInPage>
     </>

@@ -6,22 +6,22 @@ import { AppContextProvider } from "./context/AppContext";
 
 //Pages
 import LandingPage from "./pages/LandingPage/";
-import AdminPage from "./pages/AdminPage/AdminPage";
+import AdminPage from "./pages/AdminPage";
 
 const App = () => {
   const location = useLocation();
   const { pathname } = location;
 
-  let title = '';
-  if(pathname === "/statistics/goals"){
+  let title = "";
+  if (pathname === "/statistics/goals") {
     title = "Goal";
-  }else if(pathname === "/statistics/assists"){
+  } else if (pathname === "/statistics/assists") {
     title = "Assist";
-  }else if(pathname === "/statistics/clean-sheets"){
+  } else if (pathname === "/statistics/clean-sheets") {
     title = "Clean Sheet";
-  }else if(pathname === "/statistics/yellow-cards"){
+  } else if (pathname === "/statistics/yellow-cards") {
     title = "Yellow Card";
-  }else if(pathname === "/statistics/red-cards"){
+  } else if (pathname === "/statistics/red-cards") {
     title = "Red Card";
   }
 
@@ -34,7 +34,7 @@ const App = () => {
             <Route path="/" element={<LandingPage />} />
             {/* public routes */}
 
-            <Route path="/statistics/goals" element={<AdminPage /> } />
+            <Route path="/statistics/goals" element={<AdminPage />} />
             {/* <Route  path="/statistics/goals" render={() => <AdminPage title={title} />} /> */}
             <Route path="/statistics/assists" element={<AdminPage />} />
             <Route path="/statistics/clean-sheets" element={<AdminPage />} />
