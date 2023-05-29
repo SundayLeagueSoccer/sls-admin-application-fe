@@ -2,25 +2,66 @@
 @import "../../../assets/styles/colors.scss";
 
 .DashboardLeft {
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    column-gap: pixRem(10);
-    width: 33%;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  column-gap: pixRem(10);
+  width: 33%;
 
-    .PlayersName {
-      p {
-        background-color: $playersName;
-        border-radius: pixRem(24);
-        font-family: "Sora";
-        font-style: normal;
-        font-weight: 400;
-        font-size: pixRem(18);
-        line-height: 170%;
-        letter-spacing: pixRem(-0.333333);
-        padding: pixRem(3) pixRem(25);
-        color: #ffffff;
-        cursor: pointer;
-      }
+  .PlayersName {
+    p {
+      background-color: $playersName;
+      border-radius: pixRem(24);
+      font-family: "Sora";
+      font-style: normal;
+      font-weight: 400;
+      font-size: pixRem(18);
+      line-height: 170%;
+      letter-spacing: pixRem(-0.333333);
+      padding: pixRem(3) pixRem(25);
+      color: #ffffff;
+      cursor: pointer;
     }
   }
+}
+
+.loading_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+
+  @include md() {
+    font-size: 16px;
+  }
+
+  text-align: center;
+  animation-name: load_in_out;
+  animation-duration: 1.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes load_in_out {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.error_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  text-align: center;
+  @include md() {
+    font-size: 16px;
+  }
+}
