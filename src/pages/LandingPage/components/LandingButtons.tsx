@@ -1,37 +1,9 @@
-import React from "react";
-
-// React link
-import { Link, useLocation } from "react-router-dom";
-
-// stylesheet
+import { Link } from "react-router-dom";
 import styles from "../styles/LandingButtons.module.scss";
 
-const routes = [
-  {
-    path: "/",
-    title: "Home",
-  },
-  {
-    path: "/about",
-    title: "About",
-  },
-  {
-    path: "/contact",
-    title: "Contact",
-  },
-];
-
 const LandingButtons = () => {
-  const location = useLocation();
-  const { pathname } = location;
-
-  // Extract the title from the pathname
-  const route = routes.find((route) => route.path === pathname);
-  const title = route ? route.title : "";
-
   return (
     <div className={styles.LandingPageButtons}>
-      
       <Link to="/statistics/goals">
         <button>Goals</button>
       </Link>
