@@ -1,30 +1,33 @@
 @import "../../../assets/styles/functions.scss";
 @import "../../../assets/styles/colors.scss";
 
-
 .LandingPageButtons {
-    display: flex;
-    align-items: center;
-    column-gap: pixRem(20);
+  display: flex;
+  align-items: center;
+  column-gap: pixRem(20);
 
-    @include md() {
-      display: none;
-    }
-  
-    @include sm() {
-      display: none;
-    }
-
-    button {
-      background-color: $tertiary;
-      border-radius: pixRem(8);
-      padding: pixRem(8) pixRem(20);
-      color: #ffffff;
-      font-style: normal;
-      font-weight: 700;
-      font-size: pixRem(20);
-      outline: none;
-      border: none;
-      cursor: pointer;
-    }
+  @include md() {
+    display: none;
   }
+
+  @include sm() {
+    display: none;
+  }
+
+  button {
+    background-color: $tertiary;
+    border-radius: pixRem(8);
+    padding: pixRem(8) pixRem(20);
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: pixRem(20);
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: $light;
+  }
+}

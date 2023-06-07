@@ -12,12 +12,13 @@ import AdminDashboardRight from "./components/AdminDashboardRight";
 import AdminView from "./components/AdminView";
 
 const AdminPage = () => {
-  const { setStatsCategory } = useApp();
+  const { setStatsCategory, setPlayersStatsList } = useApp();
   const location = useLocation();
 
   useEffect(() => {
     const routeName = location.pathname.substring(12, location.pathname.length);
     setStatsCategory(routeName);
+    setPlayersStatsList([]);
   }, []);
 
   return (

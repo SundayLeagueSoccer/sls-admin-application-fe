@@ -1,101 +1,101 @@
 @import "../../../assets/styles/functions.scss";
 @import "../../../assets/styles/colors.scss";
 
-
 .DashboardRight {
-    width: 33%;
+  width: 33%;
 
-    .GoalList {
-      .GoalListHeader {
-        h3 {
-          font-family: "Solway";
-          font-style: normal;
-          font-weight: 500;
-          font-size: pixRem(20);
-          line-height: pixRem(24);
-          letter-spacing: pixRem(-0.333333);
-          color: $adminPageBlue;
-        }
-      }
-
-      .GoalListDetail {
-        margin-top: pixRem(45);
-        padding-bottom: pixRem(5);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: pixRem(1) solid #c6c6c6;
-
-        .LeftDetail {
-          display: flex;
-          align-items: center;
-
-          p {
-            margin-right: pixRem(5);
-            font-family: "Sora";
-            font-style: normal;
-            font-weight: 400;
-            font-size: pixRem(18);
-            line-height: 170%;
-            letter-spacing: pixRem(-0.333333);
-            color: $fontGrey;
-          }
-        }
-
-        .RightDetail {
-          display: flex;
-          align-items: center;
-
-          p {
-            margin-right: pixRem(20);
-            font-family: "Sora";
-            font-style: normal;
-            font-weight: 400;
-            font-size: pixRem(18);
-            line-height: 170%;
-            letter-spacing: pixRem(-0.333333);
-            color: $fontGrey;
-          }
-
-          button {
-            background: #ff0000;
-            padding: pixRem(5) pixRem(15);
-            border-radius: pixRem(8);
-            outline: none;
-            border: none;
-            cursor: pointer;
-            font-family: "Solway";
-            font-style: normal;
-            font-weight: 700;
-            font-size: pixRem(14);
-            line-height: 150%;
-            letter-spacing: pixRem(0.0025);
-            color: #ffffff;
-          }
-        }
+  .GoalList {
+    .GoalListHeader {
+      h3 {
+        font-family: "Solway";
+        font-style: normal;
+        font-weight: 500;
+        font-size: pixRem(20);
+        line-height: pixRem(24);
+        letter-spacing: pixRem(-0.333333);
+        color: $adminPageBlue;
       }
     }
 
-    .Submit {
-        text-align: center;
-        margin: 0 auto;
-        margin-top: pixRem(200);
-  
-        button {
-          background: #0169c2;
-          padding: pixRem(5) pixRem(25);
-          border: pixRem(1) solid #c1c1c1;
-          border-radius: pixRem(8);
-          font-family: "Solway";
+    .GoalListDetail {
+      margin-top: pixRem(45);
+      padding-bottom: pixRem(5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: pixRem(1) solid #c6c6c6;
+
+      .LeftDetail {
+        display: flex;
+        align-items: center;
+
+        p {
+          margin-right: pixRem(5);
+          font-family: "Sora";
           font-style: normal;
-          font-weight: 700;
-          font-size: pixRem(20);
-          line-height: 150%;
-          letter-spacing: pixRem(0.0025);
-          color: #ffffff;
+          font-weight: 400;
+          font-size: pixRem(18);
+          line-height: 170%;
+          letter-spacing: pixRem(-0.333333);
+          color: $fontGrey;
+        }
+      }
+
+      .RightDetail {
+        display: flex;
+        align-items: center;
+
+        p {
+          margin-right: pixRem(20);
+          font-family: "Sora";
+          font-style: normal;
+          font-weight: 400;
+          font-size: pixRem(18);
+          line-height: 170%;
+          letter-spacing: pixRem(-0.333333);
+          color: $fontGrey;
+        }
+
+        button {
+          background: #ff0000;
+          padding: pixRem(5) pixRem(15);
+          border-radius: pixRem(8);
           outline: none;
           border: none;
           cursor: pointer;
+          font-family: "Solway";
+          font-style: normal;
+          font-weight: 700;
+          font-size: pixRem(14);
+          line-height: 150%;
+          letter-spacing: pixRem(0.0025);
+          color: #ffffff;
         }
       }
+    }
   }
+
+  .Submit {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: pixRem(200);
+    font-family: "Solway";
+
+    button {
+      background: #0169c2;
+      padding: pixRem(5) pixRem(25);
+      border: pixRem(1) solid #c1c1c1;
+      border-radius: pixRem(8);
+      font-family: "Solway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: pixRem(20);
+      line-height: 150%;
+      letter-spacing: pixRem(0.0025);
+      color: #ffffff;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
